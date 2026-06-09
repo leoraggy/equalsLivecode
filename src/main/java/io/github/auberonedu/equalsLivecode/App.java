@@ -1,7 +1,6 @@
 package io.github.auberonedu.equalsLivecode;
 
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -14,11 +13,14 @@ public class App {
         Centroid locA = new Centroid(4, 9, "Salamander");
         Centroid locB = new Centroid(4, 9, "Salamander");
 
-        System.out.println("Result of locA == locB " + (locA == locB));
-        System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
+        locA.hashCode();
+
+        // System.out.println("Result of locA == locB " + (locA == locB));
+        // System.out.println("Result of locA.equals(locB) " + locA.equals(locB));
 
         videoDemo();
     }
+
 
     // We will look at this a bit later in the livecode, please ignore for first part
     public static void videoDemo() {
